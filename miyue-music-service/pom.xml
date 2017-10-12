@@ -178,41 +178,29 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+
 	<repositories>
 		<repository>
-			<id>Sonatype</id>
-			<name>Sonatype Release</name>
-			<url>http://oss.sonatype.org/content/repositories/releases </url>
-		</repository>
-
-		<repository>
-			<id>Akka</id>
-			<name>Akka Maven2 Repository</name>
-			<url>http://akka.io/repository/</url>
-		</repository>
-
-		<repository>
-			<id>central</id>
-			<name>central</name>
-			<url>http://stcdev.sky-mobi.com:8080/nexus/content/repositories/central/</url>
-		</repository>
-
-		<repository>
-			<id>skymobi</id>
-			<name>Skymobi Repository</name>
-			<url>http://stcdev.sky-mobi.com:8080/nexus/content/repositories/releases/</url>
+			<id>frontPay-nexus</id>
+			<name>frontPay nexus</name>
+			<url>http://10.1.21.1:8081/nexus/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
 		</repository>
 		<repository>
 			<id>jboss</id>
 			<name>JBoss Repository</name>
 			<url>http://repository.jboss.org/maven2/</url>
 		</repository>
-		<repository>
-			<id>skymobi thirdparty</id>
-			<name>Skymobi Repository</name>
-			<url>http://172.16.3.208:8649/nexus/content/repositories/thirdparty</url>
-		</repository>
 	</repositories>
+
+
+
 	<build>
 		<plugins>
 			<plugin>
